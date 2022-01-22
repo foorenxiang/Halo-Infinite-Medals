@@ -1,0 +1,843 @@
+{
+    "data": {
+      "core": {
+        "summary": {
+          "kills": 7414,
+          "deaths": 6811,
+          "assists": 3331,
+          "betrayals": 3,
+          "suicides": 31,
+          "vehicles": {
+            "destroys": 147,
+            "hijacks": 51
+          },
+          "medals": 2683
+        },
+        "damage": {
+          "taken": 2130685,
+          "dealt": 2331401,
+          "average": 3404
+        },
+        "shots": {
+          "fired": 301732,
+          "landed": 103248,
+          "missed": 198484,
+          "accuracy": 34.21844550793419
+        },
+        "breakdowns": {
+          "kills": {
+            "melee": 1978,
+            "grenades": 658,
+            "headshots": 1476,
+            "power_weapons": 945
+          },
+          "assists": {
+            "emp": 1,
+            "driver": 55,
+            "callouts": 87
+          },
+          "matches": {
+            "wins": 320,
+            "losses": 335,
+            "left": 17,
+            "draws": 13
+          },
+          "medals": [
+            {
+              "id": 622331684,
+              "name": "Double Kill",
+              "count": 527,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/double-kill.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/double-kill.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/double-kill.png"
+              }
+            },
+            {
+              "id": 269174970,
+              "name": "Boxer",
+              "count": 150,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/boxer.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/boxer.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/boxer.png"
+              }
+            },
+            {
+              "id": 548533137,
+              "name": "Back Smack",
+              "count": 255,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/back-smack.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/back-smack.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/back-smack.png"
+              }
+            },
+            {
+              "id": 2780740615,
+              "name": "Killing Spree",
+              "count": 194,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/killing-spree.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/killing-spree.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/killing-spree.png"
+              }
+            },
+            {
+              "id": 2861418269,
+              "name": "Quick Draw",
+              "count": 32,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/quick-draw.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/quick-draw.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/quick-draw.png"
+              }
+            },
+            {
+              "id": 1969067783,
+              "name": "Chain Reaction",
+              "count": 6,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/chain-reaction.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/chain-reaction.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/chain-reaction.png"
+              }
+            },
+            {
+              "id": 1176569867,
+              "name": "Yard Sale",
+              "count": 42,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/yard-sale.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/yard-sale.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/yard-sale.png"
+              }
+            },
+            {
+              "id": 221693153,
+              "name": "Splatter",
+              "count": 20,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/splatter.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/splatter.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/splatter.png"
+              }
+            },
+            {
+              "id": 2418616582,
+              "name": "Harpoon",
+              "count": 70,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/harpoon.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/harpoon.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/harpoon.png"
+              }
+            },
+            {
+              "id": 4229934157,
+              "name": "Snipe",
+              "count": 30,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/snipe.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/snipe.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/snipe.png"
+              }
+            },
+            {
+              "id": 3488248720,
+              "name": "Stopped Short",
+              "count": 4,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/stopped-short.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/stopped-short.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/stopped-short.png"
+              }
+            },
+            {
+              "id": 3114137341,
+              "name": "Bulltrue",
+              "count": 9,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/bulltrue.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/bulltrue.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/bulltrue.png"
+              }
+            },
+            {
+              "id": 3233952928,
+              "name": "Killjoy",
+              "count": 155,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/killjoy.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/killjoy.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/killjoy.png"
+              }
+            },
+            {
+              "id": 1210678802,
+              "name": "Warrior",
+              "count": 26,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/warrior.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/warrior.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/warrior.png"
+              }
+            },
+            {
+              "id": 1146876011,
+              "name": "Bomber",
+              "count": 20,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/bomber.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/bomber.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/bomber.png"
+              }
+            },
+            {
+              "id": 2625820422,
+              "name": "From the Grave",
+              "count": 100,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/from-the-grave.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/from-the-grave.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/from-the-grave.png"
+              }
+            },
+            {
+              "id": 2602963073,
+              "name": "No Scope",
+              "count": 65,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/no-scope.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/no-scope.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/no-scope.png"
+              }
+            },
+            {
+              "id": 1646928910,
+              "name": "Grand Slam",
+              "count": 2,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/grand-slam.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/grand-slam.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/grand-slam.png"
+              }
+            },
+            {
+              "id": 2123530881,
+              "name": "Reversal",
+              "count": 218,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/reversal.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/reversal.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/reversal.png"
+              }
+            },
+            {
+              "id": 1734214473,
+              "name": "Whiplash",
+              "count": 24,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/whiplash.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/whiplash.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/whiplash.png"
+              }
+            },
+            {
+              "id": 2414983178,
+              "name": "Bank Shot",
+              "count": 22,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/bank-shot.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/bank-shot.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/bank-shot.png"
+              }
+            },
+            {
+              "id": 3347922939,
+              "name": "Scattergunner",
+              "count": 3,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/scattergunner.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/scattergunner.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/scattergunner.png"
+              }
+            },
+            {
+              "id": 3227840152,
+              "name": "Goal Line Stand",
+              "count": 5,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/goal-line-stand.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/goal-line-stand.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/goal-line-stand.png"
+              }
+            },
+            {
+              "id": 1169390319,
+              "name": "Steaktacular",
+              "count": 32,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/steaktacular.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/steaktacular.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/steaktacular.png"
+              }
+            },
+            {
+              "id": 2852571933,
+              "name": "Rifleman",
+              "count": 96,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/rifleman.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/rifleman.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/rifleman.png"
+              }
+            },
+            {
+              "id": 1283796619,
+              "name": "Off the Rack",
+              "count": 22,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/off-the-rack.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/off-the-rack.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/off-the-rack.png"
+              }
+            },
+            {
+              "id": 3091261182,
+              "name": "Last Shot",
+              "count": 23,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/last-shot.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/last-shot.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/last-shot.png"
+              }
+            },
+            {
+              "id": 1172766553,
+              "name": "Gunslinger",
+              "count": 13,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/gunslinger.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/gunslinger.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/gunslinger.png"
+              }
+            },
+            {
+              "id": 3934547153,
+              "name": "Hail Mary",
+              "count": 5,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/hail-mary.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/hail-mary.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/hail-mary.png"
+              }
+            },
+            {
+              "id": 1427176344,
+              "name": "360",
+              "count": 11,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/360.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/360.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/360.png"
+              }
+            },
+            {
+              "id": 1512363953,
+              "name": "Perfect",
+              "count": 17,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/perfect.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/perfect.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/perfect.png"
+              }
+            },
+            {
+              "id": 2063152177,
+              "name": "Triple Kill",
+              "count": 31,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/triple-kill.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/triple-kill.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/triple-kill.png"
+              }
+            },
+            {
+              "id": 3655682764,
+              "name": "Stick",
+              "count": 34,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/stick.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/stick.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/stick.png"
+              }
+            },
+            {
+              "id": 3546244406,
+              "name": "Kong",
+              "count": 11,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/kong.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/kong.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/kong.png"
+              }
+            },
+            {
+              "id": 1284032216,
+              "name": "Wingman",
+              "count": 54,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/wingman.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/wingman.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/wingman.png"
+              }
+            },
+            {
+              "id": 690125105,
+              "name": "Grapple-jack",
+              "count": 14,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/grapple-jack.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/grapple-jack.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/grapple-jack.png"
+              }
+            },
+            {
+              "id": 3085856613,
+              "name": "Ninja",
+              "count": 10,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/ninja.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/ninja.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/ninja.png"
+              }
+            },
+            {
+              "id": 3334154676,
+              "name": "Guardian Angel",
+              "count": 26,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/guardian-angel.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/guardian-angel.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/guardian-angel.png"
+              }
+            },
+            {
+              "id": 3059799290,
+              "name": "Return to Sender",
+              "count": 2,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/return-to-sender.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/return-to-sender.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/return-to-sender.png"
+              }
+            },
+            {
+              "id": 4277328263,
+              "name": "Sharpshooter",
+              "count": 4,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/sharpshooter.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/sharpshooter.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/sharpshooter.png"
+              }
+            },
+            {
+              "id": 4261842076,
+              "name": "Killing Frenzy",
+              "count": 9,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/killing-frenzy.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/killing-frenzy.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/killing-frenzy.png"
+              }
+            },
+            {
+              "id": 2758320809,
+              "name": "Marksman",
+              "count": 123,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/marksman.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/marksman.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/marksman.png"
+              }
+            },
+            {
+              "id": 3905838030,
+              "name": "Cluster Luck",
+              "count": 16,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/cluster-luck.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/cluster-luck.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/cluster-luck.png"
+              }
+            },
+            {
+              "id": 1880789493,
+              "name": "Mind the Gap",
+              "count": 3,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/mind-the-gap.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/mind-the-gap.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/mind-the-gap.png"
+              }
+            },
+            {
+              "id": 3732790338,
+              "name": "Fumble",
+              "count": 7,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/fumble.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/fumble.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/fumble.png"
+              }
+            },
+            {
+              "id": 2278023431,
+              "name": "Tanker",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/tanker.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/tanker.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/tanker.png"
+              }
+            },
+            {
+              "id": 1169571763,
+              "name": "Shot Caller",
+              "count": 23,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/shot-caller.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/shot-caller.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/shot-caller.png"
+              }
+            },
+            {
+              "id": 4215552487,
+              "name": "Ballista",
+              "count": 9,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/ballista.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/ballista.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/ballista.png"
+              }
+            },
+            {
+              "id": 87172902,
+              "name": "Odin's Raven",
+              "count": 2,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/odins-raven.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/odins-raven.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/odins-raven.png"
+              }
+            },
+            {
+              "id": 1841872491,
+              "name": "Tag & Bag",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/tag-bag.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/tag-bag.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/tag-bag.png"
+              }
+            },
+            {
+              "id": 731054446,
+              "name": "Skyjack",
+              "count": 15,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/skyjack.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/skyjack.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/skyjack.png"
+              }
+            },
+            {
+              "id": 2648272972,
+              "name": "Grenadier",
+              "count": 11,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/grenadier.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/grenadier.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/grenadier.png"
+              }
+            },
+            {
+              "id": 1680000231,
+              "name": "Flawless Victory",
+              "count": 2,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/flawless-victory.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/flawless-victory.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/flawless-victory.png"
+              }
+            },
+            {
+              "id": 1472686630,
+              "name": "Always Rotating",
+              "count": 19,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/always-rotating.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/always-rotating.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/always-rotating.png"
+              }
+            },
+            {
+              "id": 4132863117,
+              "name": "Pull",
+              "count": 2,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/pull.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/pull.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/pull.png"
+              }
+            },
+            {
+              "id": 3027762381,
+              "name": "Driver",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/driver.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/driver.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/driver.png"
+              }
+            },
+            {
+              "id": 670606868,
+              "name": "Sneak King",
+              "count": 4,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/sneak-king.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/sneak-king.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/sneak-king.png"
+              }
+            },
+            {
+              "id": 2827657131,
+              "name": "Windshield Wiper",
+              "count": 7,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/windshield-wiper.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/windshield-wiper.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/windshield-wiper.png"
+              }
+            },
+            {
+              "id": 524758914,
+              "name": "Boom Block",
+              "count": 5,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/boom-block.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/boom-block.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/boom-block.png"
+              }
+            },
+            {
+              "id": 2750622016,
+              "name": "Breacher",
+              "count": 2,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/breacher.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/breacher.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/breacher.png"
+              }
+            },
+            {
+              "id": 835814121,
+              "name": "Overkill",
+              "count": 4,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/overkill.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/overkill.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/overkill.png"
+              }
+            },
+            {
+              "id": 3160646854,
+              "name": "Remote Detonation",
+              "count": 3,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/remote-detonation.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/remote-detonation.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/remote-detonation.png"
+              }
+            },
+            {
+              "id": 3217141618,
+              "name": "Achilles Spine",
+              "count": 4,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/achilles-spine.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/achilles-spine.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/achilles-spine.png"
+              }
+            },
+            {
+              "id": 3630529364,
+              "name": "Clock Stop",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/clock-stop.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/clock-stop.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/clock-stop.png"
+              }
+            },
+            {
+              "id": 2477555653,
+              "name": "Spotter",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/spotter.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/spotter.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/spotter.png"
+              }
+            },
+            {
+              "id": 1445036152,
+              "name": "Reclaimer",
+              "count": 3,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/reclaimer.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/reclaimer.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/reclaimer.png"
+              }
+            },
+            {
+              "id": 1623236079,
+              "name": "Autopilot Engaged",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/autopilot-engaged.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/autopilot-engaged.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/autopilot-engaged.png"
+              }
+            },
+            {
+              "id": 641726424,
+              "name": "Combat Evolved",
+              "count": 3,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/combat-evolved.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/combat-evolved.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/combat-evolved.png"
+              }
+            },
+            {
+              "id": 1211820913,
+              "name": "Fastball",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/fastball.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/fastball.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/fastball.png"
+              }
+            },
+            {
+              "id": 656245292,
+              "name": "Rideshare",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/rideshare.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/rideshare.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/rideshare.png"
+              }
+            },
+            {
+              "id": 651256911,
+              "name": "Interlinked",
+              "count": 3,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/interlinked.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/interlinked.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/interlinked.png"
+              }
+            },
+            {
+              "id": 2926348688,
+              "name": "Wheelman",
+              "count": 4,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/wheelman.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/wheelman.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/wheelman.png"
+              }
+            },
+            {
+              "id": 265478668,
+              "name": "Nade Shot",
+              "count": 2,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/nade-shot.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/nade-shot.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/nade-shot.png"
+              }
+            },
+            {
+              "id": 3739610597,
+              "name": "Flyin' High",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/flyin-high.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/flyin-high.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/flyin-high.png"
+              }
+            },
+            {
+              "id": 1065136443,
+              "name": "Mount Up",
+              "count": 2,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/mount-up.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/mount-up.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/mount-up.png"
+              }
+            },
+            {
+              "id": 781229683,
+              "name": "Straight Balling",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/straight-balling.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/straight-balling.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/straight-balling.png"
+              }
+            },
+            {
+              "id": 976049027,
+              "name": "Flag Joust",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/flag-joust.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/flag-joust.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/flag-joust.png"
+              }
+            },
+            {
+              "id": 3783455472,
+              "name": "Gunner",
+              "count": 1,
+              "image_urls": {
+                "small": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/small/gunner.png",
+                "medium": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/medium/gunner.png",
+                "large": "https://assets.halo.autocode.gg/static/infinite/images/multiplayer/medals/large/gunner.png"
+              }
+            }
+          ]
+        },
+        "kda": 2.5012165450121664,
+        "kdr": 1.0885332550286302,
+        "total_score": 982520
+      },
+      "matches_played": 685,
+      "time_played": {
+        "seconds": 394925,
+        "human": "4d 13h 42m 05s"
+      },
+      "win_rate": 46.715328467153284
+    },
+    "additional": {
+      "gamertag": "BusiestGoose412",
+      "filter": "matchmade:pvp"
+    }
+}
