@@ -13,7 +13,6 @@ def _sort_medal_stats(medal_stats):
     return sorted(
         medal_stats,
         key=lambda medal_descriptor: medal_descriptor["count"],
-        reverse=True,
     )
 
 
