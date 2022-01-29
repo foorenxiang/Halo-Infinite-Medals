@@ -3,7 +3,7 @@ import requests
 from pathlib import Path
 import logging
 from functools import lru_cache
-from typing import Tuple
+from typing import Optional, Tuple
 
 sys.path.append(os.getcwd())
 from src.get_medal_stats import get_spartan_medal_stats
@@ -57,7 +57,7 @@ def _extract_image_data(res: requests.Response) -> bytes:
     return medal_image_data
 
 
-def _write_medal_image_to_disk(medal_cache_file, medal_image_data):
+def _cache_medal_image_to_disk(medal_cache_file, medal_image_data):
     with open(medal_cache_file, "wb") as fp:
         fp.write(medal_image_data)
 
@@ -66,58 +66,67 @@ def _warn_failed_download(medal_image_url):
     logger.warning(f"Failed to get medal for {medal_image_url}")
 
 
-@lru_cache()
-def get_medal_image_data(medal_image_url):
-    medal_filename = Path(medal_image_url).name
-    medal_cache_filepath: Path = MEDAL_CACHE_FOLDER / medal_filename
-    if medal_cache_filepath.exists():
-        medal_image_data = _read_medal_image_data_from_cache(medal_cache_filepath)
-        return medal_image_data
-    res = requests.get(medal_image_url)
-    if _is_successful_download(res):
-        medal_image_data = _extract_image_data(res)
-        _write_medal_image_to_disk(medal_cache_filepath, medal_image_data)
+def _download_medal_image_data(medal_image_url) -> Optional[bytes]:
+    download_response = requests.get(medal_image_url)
+    if _is_successful_download(download_response):
+        medal_image_data = _extract_image_data(download_response)
         return medal_image_data
     _warn_failed_download(medal_image_url)
 
 
-def _process_medal_image_url(medal_descriptor) -> Tuple[str, str, int]:
+def _download_and_cache_medal_image_data(
+    medal_image_url, medal_cache_filepath
+) -> bytes:
+    medal_image_data = _download_medal_image_data(medal_image_url)
+    assert medal_image_data, f"Failed to download image data from {medal_image_url}"
+    _cache_medal_image_to_disk(medal_cache_filepath, medal_image_data)
+    return medal_image_data
+
+
+@lru_cache()
+def get_medal_image_data(medal_image_url) -> Optional[bytes]:
+    medal_cache_filepath = _resolve_medal_cache_filepath(medal_image_url)
+    if medal_cache_filepath.exists():
+        medal_image_data = _read_medal_image_data_from_cache(medal_cache_filepath)
+        return medal_image_data
+    return _download_and_cache_medal_image_data(medal_image_url, medal_cache_filepath)
+
+
+def _resolve_medal_cache_filepath(medal_image_url) -> Path:
+    medal_filename = Path(medal_image_url).name
+    medal_cache_filepath: Path = MEDAL_CACHE_FOLDER / medal_filename
+    return medal_cache_filepath
+
+
+def _process_medal_image_descriptor(medal_descriptor) -> Tuple[str, str, int]:
     medal_image_url: str = medal_descriptor["image_urls"]["large"]
     medal_name = str(Path(medal_image_url).stem)
     medal_count: int = medal_descriptor["count"]
     return medal_name, medal_count, medal_image_url
 
 
-def _print_new_medals_awarded(medal_name, medal_count, new_medals_awarded_count):
+def _print_new_medals_awarded(
+    medal_name: str, medal_count: int, new_medals_awarded_count: int
+):
     print(
         f"Awarding {new_medals_awarded_count} new {medal_name} medal{'s' if medal_count > 1 else ''}"
     )
 
 
-def _warn_failed_medal_awarding(medal_name):
-    logger.warning(f"Failed to award {medal_name}")
-
-
 def _download_medals(medal_stats: dict, medals_folder: PathStr):
-    print("")
     for medal_descriptor in medal_stats:
-        medal_name, medal_count, medal_image_url = _process_medal_image_url(
+        medal_name, medal_count, medal_image_url = _process_medal_image_descriptor(
             medal_descriptor
         )
         medal_image_data = get_medal_image_data(medal_image_url)
-        if medal_image_data:
-            new_medals_awarded_count = _create_medal_images(
-                medals_folder,
-                medal_count,
-                medal_image_url,
-                medal_image_data,
-            )
-            if new_medals_awarded_count:
-                _print_new_medals_awarded(
-                    medal_name, medal_count, new_medals_awarded_count
-                )
-        else:
-            _warn_failed_medal_awarding(medal_name)
+        new_medals_awarded_count = _create_medal_images(
+            medals_folder,
+            medal_count,
+            medal_image_url,
+            medal_image_data,
+        )
+        if new_medals_awarded_count:
+            _print_new_medals_awarded(medal_name, medal_count, new_medals_awarded_count)
 
 
 def _create_medal_images(
