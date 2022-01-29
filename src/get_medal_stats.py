@@ -1,4 +1,8 @@
-from get_all_stats import get_all_stats
+import sys, os
+
+sys.path.append(os.getcwd())
+
+from src.get_all_stats import get_all_stats
 
 
 def _sort_medal_stats(medal_stats):

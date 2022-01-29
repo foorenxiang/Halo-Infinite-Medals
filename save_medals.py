@@ -1,8 +1,11 @@
+import sys, os
 import requests
 from pathlib import Path
-from get_medal_stats import get_spartan_medal_stats
 import logging
 from functools import lru_cache
+
+sys.path.append(os.getcwd())
+from src.get_medal_stats import get_spartan_medal_stats
 
 logger = logging.getLogger(__name__)
 MEDAL_CACHE_FOLDER = Path("./.medal_cache")

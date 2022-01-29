@@ -1,8 +1,11 @@
-from environment import env
+import sys, os
 from functools import partial
 import ssl
 import logging
 from lib import lib as Lib
+
+sys.path.append(os.getcwd())
+from src.environment import env
 
 logger = logging.getLogger(__name__)
 
@@ -32,12 +35,3 @@ def _get_stats(gamer_tag, match_type="pvp", token=""):
 
 
 get_all_stats = partial(_get_stats, token=env["LIB_TOKEN"])
-
-
-if __name__ == "__main__":
-    result = get_all_stats("BusiestGoose412")
-    print(result)
-
-    from pprint import pprint
-
-    pprint(result)
