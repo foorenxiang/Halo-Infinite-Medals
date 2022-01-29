@@ -16,9 +16,11 @@ class AuthenticationError(Exception):
 
 def _get_stats(gamer_tag, match_type="pvp", token=""):
     if not gamer_tag:
-        raise ValueError("Please provide your xbox/halo gamertag!")
+        raise ValueError("Please provide your Spartan Service number:")
     if not token:
-        raise AuthenticationError("Please provide your autocode token in the .env file")
+        raise AuthenticationError(
+            "Please provide your autocode.com token in the .env file"
+        )
 
     ssl._create_default_https_context = ssl._create_unverified_context
     lib = Lib({"token": token})
