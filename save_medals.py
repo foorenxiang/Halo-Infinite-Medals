@@ -1,6 +1,6 @@
 import requests
 from pathlib import Path
-from get_stats import get_stats
+from get_medal_stats import get_spartan_medal_stats
 import logging
 from functools import lru_cache
 
@@ -10,22 +10,6 @@ MEDAL_CACHE_FOLDER = Path("./.medal_cache")
 
 class PathStr(str):
     pass
-
-
-def _sort_medal_stats(medal_stats):
-    return sorted(
-        medal_stats,
-        key=lambda medal_descriptor: medal_descriptor["count"],
-    )
-
-
-def get_spartan_medal_stats(spartan_id: str):
-    stats = get_stats(spartan_id)
-    if not stats:
-        return None, None
-    medal_stats = stats["data"]["core"]["breakdowns"]["medals"]
-    sorted_medal_stats = _sort_medal_stats(medal_stats)
-    return spartan_id, sorted_medal_stats
 
 
 def _print_medals_received(medal_stats: dict):

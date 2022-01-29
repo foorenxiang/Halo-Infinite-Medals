@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from main import get_spartan_medal_stats
+from get_medal_stats import get_spartan_medal_stats
 
 from fastapi.middleware.cors import CORSMiddleware
 

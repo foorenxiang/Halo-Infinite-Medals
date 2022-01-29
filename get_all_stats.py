@@ -31,11 +31,11 @@ def _get_stats(gamer_tag, match_type="pvp", token=""):
         logger.warning(f"Could not find gamertag {gamer_tag}")
 
 
-get_stats = partial(_get_stats, token=env["LIB_TOKEN"])
+get_all_stats = partial(_get_stats, token=env["LIB_TOKEN"])
 
 
 if __name__ == "__main__":
-    result = get_stats("BusiestGoose412")
+    result = get_all_stats("BusiestGoose412")
     print(result)
 
     from pprint import pprint
