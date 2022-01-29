@@ -21,6 +21,8 @@ def _sort_medal_stats(medal_stats):
 
 def get_spartan_medal_stats(spartan_id: str):
     stats = get_stats(spartan_id)
+    if not stats:
+        return None, None
     medal_stats = stats["data"]["core"]["breakdowns"]["medals"]
     sorted_medal_stats = _sort_medal_stats(medal_stats)
     return spartan_id, sorted_medal_stats
@@ -113,10 +115,14 @@ def save_medals(spartan_id: str, medal_stats: dict):
 
 def show_me_ma_medals(spartan_id: str):
     spartan_id, medal_stats = get_spartan_medal_stats(spartan_id)
+    if not (spartan_id and medal_stats):
+        logger.warning(f"Spartan {spartan_id} not found!")
+        return
     _print_medals_received(medal_stats)
     save_medals(spartan_id, medal_stats)
 
 
 if __name__ == "__main__":
-    spartan_id = input("What is your id, Spartan?: ")
-    show_me_ma_medals(spartan_id)
+    while True:
+        spartan_id = input("What is your id, Spartan?: ")
+        show_me_ma_medals(spartan_id)
