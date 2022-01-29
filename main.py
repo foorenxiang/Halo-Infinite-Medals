@@ -1,5 +1,4 @@
 from pprint import pprint
-import shutil
 import requests
 from pathlib import Path
 from get_stats import get_stats
@@ -20,7 +19,7 @@ def get_spartan_medal_stats(spartan_id: str):
     stats = get_stats(spartan_id)
     medal_stats = stats["data"]["core"]["breakdowns"]["medals"]
     sorted_medal_stats = _sort_medal_stats(medal_stats)
-    return sorted_medal_stats
+    return spartan_id, sorted_medal_stats
 
 
 def _print_medals_received(medal_stats: dict):
@@ -30,10 +29,6 @@ def _print_medals_received(medal_stats: dict):
         print(
             f"Earned {medal_count} {medal_name} medal{'s' if medal_count > 1 else ''}"
         )
-
-
-def _remove_existing_medal_folder(medals_folder: PathStr):
-    shutil.rmtree(medals_folder, ignore_errors=True)
 
 
 def _create_medal_folder(medals_folder: PathStr):
@@ -63,25 +58,25 @@ def _create_medal_images(
     res: requests.Response,
 ):
     for idx in range(medal_descriptor["count"]):
-        with open(
-            f"{medals_folder}/{Path(medal_image_url).stem}_{idx+1}{Path(medal_image_url).suffix}",
-            "wb",
-        ) as fp:
-            fp.write(res.content)
+        medal_file_name = f"./{medals_folder}/{Path(medal_image_url).stem}_{idx+1}{Path(medal_image_url).suffix}"
+        if not Path(medal_file_name).exists():
+            with open(
+                medal_file_name,
+                "wb",
+            ) as fp:
+                fp.write(res.content)
 
 
-def save_medals(medal_stats: dict):
-    medals_folder = PathStr("./medals")
-    _remove_existing_medal_folder(medals_folder)
+def save_medals(spartan_id: str, medal_stats: dict):
+    medals_folder = PathStr(f"./{spartan_id}")
     _create_medal_folder(medals_folder)
     _download_medals(medal_stats, medals_folder)
 
 
 def show_me_ma_medals(spartan_id: str):
-    medal_stats = get_spartan_medal_stats(spartan_id)
+    spartan_id, medal_stats = get_spartan_medal_stats(spartan_id)
     _print_medals_received(medal_stats)
-    save_medals(medal_stats)
-    pprint(medal_stats)
+    save_medals(spartan_id, medal_stats)
 
 
 if __name__ == "__main__":
