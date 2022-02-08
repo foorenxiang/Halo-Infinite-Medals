@@ -14,6 +14,6 @@ python3 -m pip install -r requirements.txt # unix
 2. Run the script
 
 ```
-python main.py # windows
-python3 main.py # unix
+python scripts/main.py # windows
+python3 scripts/main.py # unix
 ```
