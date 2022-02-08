@@ -11,7 +11,9 @@ pip install -r requirements.txt # windows
 python3 -m pip install -r requirements.txt # unix
 ```
 
-2. Run the script
+2. Create a .env file with a LIB_TOKEN key and your https://autocode.com/ API key (see .env_example)
+
+3. Run the script
 
 ```
 python scripts/main.py # windows
