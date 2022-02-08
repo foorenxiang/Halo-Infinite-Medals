@@ -129,19 +129,27 @@ def _download_medals(medal_stats: dict, medals_folder: PathStr):
             _print_new_medals_awarded(medal_name, medal_count, new_medals_awarded_count)
 
 
+def _resolve_medal_filename(
+    medals_folder: str, medal_image_url: str, medal_index
+) -> str:
+    medal_path_stem = Path(medal_image_url).stem
+    medal_path_suffix = Path(medal_image_url).suffix
+    medal_filename = (
+        f"{medals_folder}/{medal_path_stem}_{medal_index+1}{medal_path_suffix}"
+    )
+    return medal_filename
+
+
 def _create_medal_images(
     medals_folder: str,
     medal_count: int,
     medal_image_url: str,
     medal_image_data: bytes,
 ):
-    medal_path_stem = Path(medal_image_url).stem
-    medal_path_suffix = Path(medal_image_url).suffix
+
     new_medal_count = 0
     for idx in range(medal_count):
-        medal_file_name = (
-            f"{medals_folder}/{medal_path_stem}_{idx+1}{medal_path_suffix}"
-        )
+        medal_file_name = _resolve_medal_filename(medals_folder, medal_image_url, idx)
         if not Path(medal_file_name).exists():
             new_medal_count += 1
             with open(
